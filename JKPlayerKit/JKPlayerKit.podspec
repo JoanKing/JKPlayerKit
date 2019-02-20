@@ -11,10 +11,9 @@ Pod::Spec.new do |spec|
   spec.author             = { "JoanKingWC" => "JoanKingWC@163.com" }
   spec.ios.deployment_target = "9.0"
   spec.source       = { :git => "https://github.com/JoanKing/JKPlayerKit.git", :tag => "#{spec.version}" }
-  # spec.source_files  = "Class", "Class/**/*"
-  spec.subspec "iphoneos" do |ss1|
-     ss1.vendored_framework = "Class/JKPlayerKitFramework.framework"
-  end
+  # spec.source_files  = "Headers", "Headers/**/*"
+
+  spec.vendored_frameworks = "Class/JKPlayerKitFramework.framework"
 
   spec.frameworks = ["UIKit", "Foundation","AVFoundation"]
 
