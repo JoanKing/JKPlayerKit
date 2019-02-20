@@ -1,0 +1,6 @@
+framework module JKPlayerKitFramework {
+  umbrella header "JKPlayerKitFramework.h"
+
+  export *
+  module * { export * }
+}
